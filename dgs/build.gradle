@@ -12,10 +12,12 @@ java {
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
+    jcenter()
 }
 
 dependencies {
+	implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:latest.release"
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
